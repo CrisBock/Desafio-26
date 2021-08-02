@@ -1,0 +1,76 @@
+footer {
+    padding: 4rem 2rem;
+    height: 50vh;
+    div {
+        a {
+            color: $color4;
+            padding-bottom: 3px;
+            text-decoration: none;
+            &:hover, &:focus {
+            color: $color2;
+            }
+        }
+        h3 {
+            border-bottom: 1px solid $color5;
+            color: $color3;
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: 3px;
+            margin: 10px 0 20px;
+            padding-bottom: 7px;
+            text-transform: uppercase;
+            font-weight: normal;
+            }
+        .address {
+            color: $color12;
+            line-height: 2;
+            margin-bottom: 30px;
+            }
+        ul {
+            .list-link {
+                margin-bottom: 10px;
+                font-size: 11px;
+                text-transform: uppercase;
+                }
+            li {
+                list-style: none;
+                a {
+                    display: inline-block;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    box-shadow: 0 0 1px $color8;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -moz-osx-font-smoothing: grayscale;
+                    position: relative;
+                    color: $color7;
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            left: 50%;
+                            right: 50%;
+                            bottom: 0;
+                            background: $color3;
+                            height: 1px;
+                            -webkit-transition-property: "left, right";
+                            transition-property: "left, right";
+                            -webkit-transition-duration: 0.3s;
+                            transition-duration: 0.3s;
+                            -webkit-transition-timing-function: ease-out;
+                            transition-timing-function: ease-out;
+                            }
+                        &hover:before, &focus:before, &active:before {
+                            left: 0;
+                            right: 0;
+                            }
+                        }
+                    }
+                }
+            .bottom-footer {
+                display: inline-block;
+                margin: 50px;
+                width: 100%;
+                }
+            }
+        }
